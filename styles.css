@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+  --text-color:#00aa00;
+}
+
+body{
+    list-style: none;
+    /* We are going to use Roboto Mono as font*/
+    font-family: 'Roboto Mono',sans-serif;
+    background-color: #333;
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 18px;
+}
+h2{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing:-2px;
+    margin-bottom: 20px;
+}
+
+.content .links a{
+    text-decoration: none;
+    color:var(--text-color);
+    font-size: 14px;
+}
+
+.foot h3{
+  color:var(--text-color);
+}
+.foot{
+    display: none;
+}
+
+
+/*Container*/
+.container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+nav{
+    width: 30%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+nav ul li {
+    cursor: pointer;
+    color: var(--text-color);
+    margin-left: 15px;
+}
+.wb-body{
+    background-color: rgb(27, 27, 27);
+}
+
+.cursor { 
+    font-weight: 700;
+    animation: 1s blink step-start infinite;
+ }
+ @keyframes blink {
+     from,to { 
+         color: transparent;
+      }
+      50%{
+          color: var(--text-color);
+      }
+ }
+ h3{
+     color: var(--text-color);
+ }
+
+ .container { 
+     padding: 50px;
+     border-radius: 13px;
+     box-shadow: 2px 2px 2px 2px rgba(0, 170, 0, 0.5);
+  }
